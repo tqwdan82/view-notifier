@@ -1,5 +1,5 @@
 # View-Notifier
-A JavaScript library that provides custom event listener addition and handler. View-Notifier is developed to assist developers in developing more interactive views, allowing more interaction and responses between DOM elements using JavaScript HTML DOM Events. This library is written in vanilla JavaScript using JavaScript DOM APIs.
+A JavaScript library that provides custom event listener addition and handler registration. View-Notifier is developed to assist developers in developing more interactive views, allowing more interaction and responses between DOM elements using JavaScript HTML DOM Events. This library is written in vanilla JavaScript using JavaScript DOM APIs.
 
 ## Getting Started
 
