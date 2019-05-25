@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="javascript/view-notifier.js" type="text/javascript"></script>
+        <script>
+            var configuration = {
+                'containerId':'number',
+                'templatePath':'/template/template.html',
+                'listeners':[
+                    {
+                        'topic':'numberChanged',
+                        'handler':function(e){
+                                    this.querySelector("#someid").textContent = e.detail.number;
+                                    this.querySelector("#someid").style.color = e.detail.textColor;
+                                }
+                    }
+                ]
+            };
+            var configuration2 = {
+                'containerId':'number2',
+                'templatePath':'/template/template.1.html',
+                'templateScriptPaths':['/template/template.js'],
+                'listeners':[]
+            };  
+
+            var configuration4 = {
+                'containerId':'number4',
+                'templateHtml':'<h1>Test Section</h1><p>Content</p>',
+                'listeners':[
+                    {
+                        'topic':'numberChanged',
+                        'handler':function(e){
+                                    this.textContent = e.detail.number;
+                                    this.style.color = e.detail.textColor;
+                                }
+                    }
+                ]
+            };  
+        </script>
+    </head>
+    
+    <body>
+        <h2 id='number'></h2>
+        <h2 id='number1'>blank intentionally</h2>
+        <h2 id='number2'></h2>
+        <h2 id='number3'>blank intentionally</h2>
+        <h2 id='number4'></h2>
+        <script type="text/javascript">
+            ViewNotifier.registerModule(configuration);
+            ViewNotifier.registerModule(configuration2);
+            ViewNotifier.registerModule(configuration4);
+        </script>
+    </body>
+</html>
