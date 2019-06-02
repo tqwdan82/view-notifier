@@ -58,7 +58,7 @@ Look in the sample directory for a sample. Sample is required to be run on a Web
 
 ## Authors
 
-* **Tay Qiaowei** - *Initial work* - [tqwdan82](https://github.com/tqwdan82)
+* **TQW** - *Initial work* - [tqwdan82](https://github.com/tqwdan82)
 
 See also the list of [contributors](https://github.com/your/project/contributors) who participated in this project, if any.
 
